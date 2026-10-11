@@ -58,7 +58,7 @@ const AdminLoginPage = () => {
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <img 
             src="/logo.png" 
-            alt="CampusConnect Logo" 
+            alt="CampX Logo" 
             style={{ 
               width: '80px', 
               height: '80px', 
@@ -123,7 +123,7 @@ const AdminLoginPage = () => {
           </form>
 
           <div style={{ marginTop: '1.25rem', textAlign: 'center', fontSize: '0.78rem', color: '#64748b' }}>
-            Protected University Placement System • CampusConnect 2026
+            Protected University Placement System • CampX 2026
           </div>
         </div>
 

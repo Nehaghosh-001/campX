@@ -232,7 +232,7 @@ const AuthPage = () => {
         <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.75rem' }}>
           <img 
             src="/logo.png" 
-            alt="CampusConnect Logo" 
+            alt="CampX Logo" 
             style={{ 
               width: '54px', 
               height: '54px', 
@@ -243,7 +243,7 @@ const AuthPage = () => {
           />
           <div style={{ textAlign: 'left' }}>
             <h1 style={{ fontSize: '2rem', fontWeight: '800', letterSpacing: '-0.02em', margin: 0 }}>
-              <span style={{ color: '#0052cc' }}>Campus</span><span style={{ color: '#f59e0b' }}>Connect</span>
+              <span style={{ color: '#0052cc' }}>Camp</span><span style={{ color: '#f59e0b' }}>X</span>
             </h1>
             <div style={{ fontSize: '0.8rem', color: '#64748b', fontWeight: '600' }}>
               Centralized Placement Management System
@@ -934,7 +934,7 @@ const AuthPage = () => {
               </form>
 
               <div style={{ marginTop: '1.25rem', paddingTop: '1rem', borderTop: '1px solid #f1f5f9', textAlign: 'center', fontSize: '0.825rem', color: '#64748b' }}>
-                Need your college registered on CampusConnect?{' '}
+                Need your college registered on CampX?{' '}
                 <button
                   onClick={() => setCollegeTab('college_onboarding')}
                   style={{ background: 'none', border: 'none', color: '#2563eb', fontWeight: '800', cursor: 'pointer' }}
@@ -965,14 +965,14 @@ const AuthPage = () => {
                       address: 'Institutional Education Corridor, Sector 5',
                       city: 'Bengaluru',
                       state: 'Karnataka',
-                      contact_email: `tpo.iit${rnd}@campusconnect.edu`,
+                      contact_email: `tpo.iit${rnd}@campx.edu`,
                       contact_phone: '+91-9876543210',
                       website: `https://iit${rnd}.edu`,
                       verification_document: 'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
                       document_name: `IIT_${rnd}_AICTE_Accreditation_Certificate_2026.pdf`,
                       admin_name: 'Dr. Anand Kumar',
                       admin_phone: '+91-9876543211',
-                      admin_email: `anand.tpo${rnd}@campusconnect.edu`
+                      admin_email: `anand.tpo${rnd}@campx.edu`
                     });
                   }}
                   className="btn btn-secondary btn-sm"

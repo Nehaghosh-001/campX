@@ -1,4 +1,4 @@
-# CampusOrbit Master Admin Panel
+# CampX Master Admin Panel
 
 Dedicated Control Center for the **Super Admin** of the Centralized Multi-College Placement Management System.
 

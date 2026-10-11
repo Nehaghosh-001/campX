@@ -49,11 +49,11 @@ const Navbar = () => {
     <header className="sticky top-0 z-50 backdrop-blur-md bg-white/95 border-b border-slate-200 shadow-sm" style={{ background: 'rgba(255, 255, 255, 0.95)', borderBottom: '1px solid #e2e8f0' }}>
       <div style={{ maxWidth: '1300px', margin: '0 auto', padding: '0.85rem 1.5rem', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         
-        {/* Brand Logo with New CampusConnect Emblem */}
+        {/* Brand Logo with CampX Emblem */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
           <img 
             src="/logo.png" 
-            alt="CampusConnect Logo" 
+            alt="CampX Logo" 
             style={{ 
               width: '44px', 
               height: '44px', 
@@ -64,8 +64,8 @@ const Navbar = () => {
           />
           <div>
             <div style={{ fontWeight: '800', fontSize: '1.25rem', letterSpacing: '-0.02em', display: 'flex', alignItems: 'center', gap: '0.4rem', color: '#0f172a' }}>
-              <span style={{ color: '#0052cc' }}>Campus</span>
-              <span style={{ color: '#f59e0b' }}>Connect</span>
+              <span style={{ color: '#0052cc' }}>Camp</span>
+              <span style={{ color: '#f59e0b' }}>X</span>
               <span style={{ fontSize: '0.65rem', background: '#fef3c7', color: '#b45309', padding: '0.15rem 0.5rem', borderRadius: '4px', border: '1px solid #fde68a', fontWeight: '800' }}>
                 Multi-College
               </span>

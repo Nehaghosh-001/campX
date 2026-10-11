@@ -1,4 +1,4 @@
-# CampusOrbit — Centralized Multi-College Placement Management System
+# CampX — Centralized Multi-College Placement Management System
 
 > **A centralized, multi-tenant placement management platform** connecting **Students**, **Companies**, and each college's **Placement Cell (TPO/Admin)** to manage the complete recruitment lifecycle — with **Super Admin Institutional Verification**, **Student Roll Number + Password authentication (with Email Reset)**, and an aesthetic **White, Royal Blue & Amber Yellow UI**.
 

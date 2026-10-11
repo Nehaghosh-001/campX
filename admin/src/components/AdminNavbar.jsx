@@ -34,7 +34,7 @@ const AdminNavbar = () => {
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', textDecoration: 'none' }}>
           <img 
             src="/logo.png" 
-            alt="CampusConnect Admin Logo" 
+            alt="CampX Admin Logo" 
             style={{ 
               width: '44px', 
               height: '44px', 
@@ -45,8 +45,8 @@ const AdminNavbar = () => {
           />
           <div>
             <div style={{ fontWeight: '800', fontSize: '1.25rem', color: '#0f172a', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-              <span style={{ color: '#0052cc' }}>Campus</span>
-              <span style={{ color: '#f59e0b' }}>Connect</span>
+              <span style={{ color: '#0052cc' }}>Camp</span>
+              <span style={{ color: '#f59e0b' }}>X</span>
               <span className="badge badge-yellow" style={{ fontSize: '0.65rem', padding: '0.15rem 0.5rem' }}>MASTER ADMIN</span>
             </div>
             <div style={{ fontSize: '0.72rem', color: '#64748b' }}>

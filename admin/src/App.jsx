@@ -91,7 +91,7 @@ function AdminAppContent() {
       </main>
 
       <footer style={{ borderTop: '1px solid #e2e8f0', padding: '1.5rem', textAlign: 'center', fontSize: '0.8rem', color: '#64748b', background: '#ffffff' }}>
-        CampusConnect Master Admin Control Panel • Centralized Multi-College Placement Management System
+        CampX Master Admin Control Panel • Centralized Multi-College Placement Management System
       </footer>
     </div>
   );

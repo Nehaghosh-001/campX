@@ -62,7 +62,7 @@ const LandingPage = () => {
         <div style={{ marginBottom: '1.5rem' }}>
           <img 
             src="/logo.png" 
-            alt="CampusConnect Logo" 
+            alt="CampX Logo" 
             style={{ 
               width: '90px', 
               height: '90px', 
@@ -310,7 +310,7 @@ const LandingPage = () => {
                 <tr>
                   <th style={{ width: '28%' }}>Dimension</th>
                   <th style={{ width: '36%', color: '#dc2626' }}>Generic Platforms (LinkedIn)</th>
-                  <th style={{ width: '36%', color: '#16a34a' }}>CampusConnect Placement System</th>
+                  <th style={{ width: '36%', color: '#16a34a' }}>CampX Placement System</th>
                 </tr>
               </thead>
               <tbody>
@@ -340,13 +340,13 @@ const LandingPage = () => {
       {/* Footer */}
       <footer style={{ maxWidth: '1200px', margin: '4rem auto 0', padding: '2rem 1.5rem', borderTop: '1px solid #e2e8f0', textAlign: 'center' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.6rem', marginBottom: '0.75rem' }}>
-          <img src="/logo.png" alt="CampusConnect Logo" style={{ width: '36px', height: '36px', objectFit: 'contain' }} />
+          <img src="/logo.png" alt="CampX Logo" style={{ width: '36px', height: '36px', objectFit: 'contain' }} />
           <span style={{ fontWeight: '800', fontSize: '1.2rem', color: '#0f172a' }}>
-            <span style={{ color: '#0052cc' }}>Campus</span><span style={{ color: '#f59e0b' }}>Connect</span>
+            <span style={{ color: '#0052cc' }}>Camp</span><span style={{ color: '#f59e0b' }}>X</span>
           </span>
         </div>
         <p style={{ fontSize: '0.825rem', color: '#64748b' }}>
-          Centralized Multi-College Placement Management System • Empowering Institutions, Students & Recruiters
+          CampX • Centralized Multi-College Placement Management System
         </p>
       </footer>
 

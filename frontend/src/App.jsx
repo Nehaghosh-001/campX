@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children, allowedRoles }) => {
   if (loading) {
     return (
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '60vh' }}>
-        <div style={{ color: 'var(--text-muted)' }}>Loading CampusOrbit...</div>
+        <div style={{ color: 'var(--text-muted)' }}>Loading CampX...</div>
       </div>
     );
   }
@@ -88,7 +88,7 @@ function AppContent() {
       <footer style={{ borderTop: '1px solid rgba(255,255,255,0.08)', padding: '2rem 1.5rem', textAlign: 'center', color: 'var(--text-dim)', fontSize: '0.8rem', background: 'rgba(11, 15, 25, 0.95)' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem' }}>
           <div style={{ fontWeight: '700', color: 'var(--text-muted)' }}>
-            CampusOrbit • Centralized Multi-College Placement Management Platform
+            CampX • Centralized Multi-College Placement Management Platform
           </div>
           <div>
             Built with Django REST Framework, SimpleJWT & React

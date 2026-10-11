@@ -166,7 +166,7 @@ const AdminDashboard = () => {
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
             <img 
               src="/logo.png" 
-              alt="CampusConnect Logo" 
+              alt="CampX Logo" 
               style={{ 
                 width: '64px', 
                 height: '64px', 
