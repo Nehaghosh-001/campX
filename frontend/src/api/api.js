@@ -1,6 +1,21 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://127.0.0.1:8000/api';
+// Determine API base URL dynamically:
+// In production (e.g. Render / Vercel), set VITE_API_URL in Environment Variables.
+// In local development, defaults to 'http://127.0.0.1:8000/api'.
+const getApiBaseUrl = () => {
+  const envUrl = import.meta.env.VITE_API_URL;
+  if (!envUrl) {
+    return 'http://127.0.0.1:8000/api';
+  }
+  let formatted = envUrl.trim();
+  if (!/^https?:\/\//i.test(formatted)) {
+    formatted = `https://${formatted}`;
+  }
+  return formatted.endsWith('/api') ? formatted : `${formatted.replace(/\/$/, '')}/api`;
+};
+
+export const API_BASE_URL = getApiBaseUrl();
 
 const api = axios.create({
   baseURL: API_BASE_URL,

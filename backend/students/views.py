@@ -168,3 +168,16 @@ class CollegeStudentsListView(APIView):
 
         serializer = StudentProfileSerializer(qs, many=True)
         return Response(serializer.data)
+
+
+class StudentDetailView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def get(self, request, pk):
+        profile = StudentProfile.objects.select_related('user', 'user__college').filter(user_id=pk).first()
+        if not profile:
+            profile = StudentProfile.objects.select_related('user', 'user__college').filter(id=pk).first()
+        if not profile:
+            return Response({'error': 'Student profile not found'}, status=status.HTTP_404_NOT_FOUND)
+        serializer = StudentProfileSerializer(profile)
+        return Response(serializer.data)

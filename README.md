@@ -64,3 +64,13 @@ Approved College gains full Placement Cell Admin Dashboard (TPO)
    cd frontend; npm run dev
    ```
 3. Open **[http://localhost:5173](http://localhost:5173)** in your browser!
+
+---
+
+## 🌐 Deploy to Render
+
+CampX is configured for 1-click multi-service deployment on **[Render](https://render.com)** using the included [`render.yaml`](./render.yaml).
+
+- **1-Click Blueprint Deploy:** Go to **Render Dashboard** -> **New +** -> **Blueprint**, and select this repository.
+- Full step-by-step instructions and configuration details are in **[`DEPLOYMENT_RENDER.md`](./DEPLOYMENT_RENDER.md)**.
+

@@ -17,4 +17,5 @@ urlpatterns = [
     path('demo-login/', DemoLoginView.as_view(), name='demo_login'),
     path('me/', CurrentUserView.as_view(), name='current_user'),
     path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh_alt'),
 ]

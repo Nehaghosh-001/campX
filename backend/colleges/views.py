@@ -23,6 +23,16 @@ class CollegeListView(APIView):
         return Response(serializer.data)
 
 
+class CollegeDetailView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def get(self, request, pk):
+        college = College.objects.filter(id=pk).first()
+        if not college:
+            return Response({'error': 'College not found'}, status=status.HTTP_404_NOT_FOUND)
+        return Response(CollegeSerializer(college).data)
+
+
 class CollegeApplyView(APIView):
     permission_classes = [permissions.AllowAny]
 

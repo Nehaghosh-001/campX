@@ -18,6 +18,8 @@ venv/
 .venv/
 env/
 *.env
+staticfiles/
+*/staticfiles/
 
 # SQLite DB (optional: keep if needed, but usually ignored or included as sample; let's exclude journal/shm)
 *.sqlite3-journal

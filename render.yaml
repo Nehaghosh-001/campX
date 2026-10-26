@@ -1,0 +1,61 @@
+services:
+  # ===========================================================================
+  # 1. Django Backend Web Service (API)
+  # ===========================================================================
+  - type: web
+    name: campx-backend
+    runtime: python
+    rootDir: backend
+    buildCommand: "bash build.sh"
+    startCommand: "gunicorn config.wsgi:application"
+    plan: free
+    healthCheckPath: /api/health/
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "False"
+      - key: ALLOWED_HOSTS
+        value: "*"
+      - key: CORS_ALLOW_ALL_ORIGINS
+        value: "True"
+
+  # ===========================================================================
+  # 2. Main Portal Frontend (Student, TPO, Recruiter)
+  # ===========================================================================
+  - type: static
+    name: campx-frontend
+    rootDir: frontend
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: "./dist"
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: campx-backend
+          property: host
+
+  # ===========================================================================
+  # 3. Super Admin Control Center Frontend
+  # ===========================================================================
+  - type: static
+    name: campx-admin
+    rootDir: admin
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: "./dist"
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: campx-backend
+          property: host

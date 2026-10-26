@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAdminAuth } from '../context/AdminAuthContext';
-import { authApi } from '../api/api';
+import { authApi, API_BASE_URL } from '../api/api';
 import { ShieldCheck, Sparkles, Lock, Mail, AlertCircle, ArrowRight } from 'lucide-react';
 
 const AdminLoginPage = () => {
@@ -28,7 +28,7 @@ const AdminLoginPage = () => {
       navigate('/');
     } catch (err) {
       if (!err.response) {
-        setError('Cannot connect to Backend API (http://127.0.0.1:8000). Please make sure the backend server is running with run_backend.bat or python manage.py runserver.');
+        setError(`Cannot connect to Backend API (${API_BASE_URL}). Please verify that the backend server is running and accessible.`);
       } else {
         setError(err.response?.data?.error || 'Invalid administrator credentials.');
       }
